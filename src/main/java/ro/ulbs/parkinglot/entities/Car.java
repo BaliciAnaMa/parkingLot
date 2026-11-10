@@ -6,9 +6,9 @@ import jakarta.persistence.*;
 @Table(name = "cars")
 public class Car {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private Long id;
+    private Long ID;
     private String licensePlate;
     private String parkingSpot;
 
@@ -41,11 +41,11 @@ public class Car {
     }
 
     public Long getId() {
-        return id;
+        return ID;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.ID = id;
     }
 
 }
