@@ -8,7 +8,7 @@ public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private Long ID;
+    private Long id;
     private String licensePlate;
     private String parkingSpot;
 
@@ -41,11 +41,11 @@ public class Car {
     }
 
     public Long getId() {
-        return ID;
+        return id;
     }
 
     public void setId(Long id) {
-        this.ID = id;
+        this.id = id;
     }
 
 }
